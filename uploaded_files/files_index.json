@@ -1,0 +1,28 @@
+{
+  "documents": [],
+  "tables_parsed": [],
+  "tables_source_info": [],
+  "images": [],
+  "summary": {
+    "total_files": 1,
+    "by_category": {
+      "documents": 0,
+      "tables_parsed": 0,
+      "tables_source_info": 0,
+      "images": 0,
+      "document": 1
+    },
+    "processing_time": null
+  },
+  "document": [
+    {
+      "original_name": "Go to project",
+      "file_name": "Go to project.md",
+      "file_path": "/workspace/evgeniy_repair_master/uploaded_files/documents/Go to project.md",
+      "file_type": "md",
+      "category": "document",
+      "summary": "Processed Go to project for coding",
+      "source_id": "2016099355910787072"
+    }
+  ]
+}
