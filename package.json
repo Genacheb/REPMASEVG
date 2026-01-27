@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "packageManager": "pnpm@10",
   "scripts": {
     "dev": "VITE_ENABLE_ROUTE_MESSAGING=true vite",
     "build": "vite build",
