@@ -6,6 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
+        with:                # <- Добавьте эту строку
+          version: 10        # <- Добавьте эту строку (отступ в 2 пробела!)
       - uses: actions/setup-node@v4
         with:
           node-version: 20
