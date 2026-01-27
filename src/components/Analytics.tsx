@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 
 const ANALYTICS_CONFIG = {
-  GA4_ID: 'G-XXXXXXXXXX', // Замените на реальный ID при развертывании
+  GA4_ID: 'G-LJQMZGDQ68', // Замените на реальный ID при развертывании
   GTM_ID: 'GTM-XXXXXXX', // Замените на реальный ID при развертывании
-  YANDEX_METRIKA_ID: '12345678', // Замените на реальный ID при развертывании
+  YANDEX_METRIKA_ID: '106476566', // Замените на реальный ID при развертывании
   FACEBOOK_PIXEL_ID: '1234567890123456', // Замените на реальный ID при развертывании
 };
 
