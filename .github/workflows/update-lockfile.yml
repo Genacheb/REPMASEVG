@@ -3,19 +3,25 @@ on: [push]
 jobs:
   update-lockfile:
     runs-on: ubuntu-latest
+    # 1. Даём workflow разрешение на запись в репозиторий
+    permissions:
+      contents: write
     steps:
+      # 2. Используем специальный токен для checkout
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - uses: pnpm/action-setup@v4
-        with:                # <- Добавьте эту строку
-          version: 10        # <- Добавьте эту строку (отступ в 2 пробела!)
+        with:
+          version: 10
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'pnpm'
       - run: pnpm install --no-frozen-lockfile
       - run: |
-          git config user.name "github-actions"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add pnpm-lock.yaml
           git commit -m "chore: update pnpm-lock.yaml" || echo "No changes to commit"
           git push
