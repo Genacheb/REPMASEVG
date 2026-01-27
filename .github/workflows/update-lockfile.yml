@@ -1,5 +1,5 @@
 name: Update Lockfile
-on: [push]
+on: workflow_dispatch:
 jobs:
   update-lockfile:
     runs-on: ubuntu-latest
