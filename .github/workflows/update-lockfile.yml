@@ -23,7 +23,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add pnpm-lock.yaml
-          git commit -m "chore: update pnpm-lock.yaml" || echo "No changes to commit"
-          # Синхронизируем с удалённой веткой, применяя наши изменения поверх новых коммитов:
-          git pull --rebase origin main
-          git push
+          git commit -m "chore: update pnpm-lock.yaml"
+          # Принудительно обновляем ветку, перезаписывая удалённую историю нашей исправленной версией:
+          git push --force-with-lease origin main
