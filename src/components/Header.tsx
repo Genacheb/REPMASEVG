@@ -74,13 +74,6 @@ export function Header() {
             Вызвать мастера
           </Button>
 
-          <button
-            className="md:hidden p-2 text-secondary hover:bg-muted rounded-full transition-colors border border-border"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label={isMobileMenuOpen ? 'Закрыть меню' : 'Открыть меню'}
-          >
-            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
         </div>
       </div>
     </header>

@@ -18,7 +18,7 @@ export function HeroSection() {
   };
 
   return (
-    <section id="hero" className="relative pt-24 pb-12 md:pt-40 md:pb-24 overflow-hidden bg-background">
+    <section id="hero" className="relative pt-0 pb-12 md:pt-0 md:pb-24 overflow-hidden bg-background">
       {/* Декоративные фоновые элементы для визуального доверия */}
       <div className="absolute top-0 right-0 -z-10 w-1/3 h-full bg-primary/5 rounded-bl-[100px] hidden lg:block animate-pulse" />
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-accent/5 rounded-full blur-3xl -z-10" />
