@@ -38,7 +38,7 @@ export function HeroSection() {
               <span>Частный мастер в Краснодаре</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-secondary">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-black leading-tight text-secondary">
               Профессиональный ремонт <br />
               <span className="text-primary">бытовой техники</span> <br />
               у вас дома
