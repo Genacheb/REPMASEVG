@@ -55,18 +55,6 @@ export function Header() {
           </a>
         </div>
 
-        <nav className="hidden md:flex items-center gap-6 lg:gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-sm font-semibold text-secondary/80 hover:text-primary transition-colors"
-            >
-              {link.name}
-            </a>
-          ))}
-        </nav>
-
         <div className="flex items-center gap-3 md:gap-6">
           <a
             href={`tel:${MASTER_DATA.phone}`}
@@ -95,56 +83,6 @@ export function Header() {
           </button>
         </div>
       </div>
-
-      {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-border p-6 flex flex-col gap-6 animate-in slide-in-from-top duration-300 shadow-2xl">
-          <nav className="flex flex-col gap-2">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-lg font-bold text-secondary hover:text-primary transition-colors py-3 border-b border-border/50"
-                onClick={closeMobileMenu}
-              >
-                {link.name}
-              </a>
-            ))}
-          </nav>
-          
-          <div className="pt-4 flex flex-col gap-4">
-            <div className="flex flex-col gap-1">
-              <span className="text-xs text-muted-foreground font-medium uppercase tracking-wider">Свяжитесь напрямую:</span>
-              <a
-                href={`tel:${MASTER_DATA.phone}`}
-                className="flex items-center gap-4 text-xl font-bold text-secondary"
-              >
-                <div className="p-3 bg-primary/10 rounded-full">
-                  <Phone className="h-6 w-6 text-primary" />
-                </div>
-                {MASTER_DATA.phoneDisplay}
-              </a>
-            </div>
-            
-            <Button 
-              className="w-full h-14 text-lg font-bold bg-accent text-accent-foreground rounded-xl shadow-lg shadow-accent/20"
-              onClick={handleContactClick}
-            >
-              Вызвать мастера
-            </Button>
-            
-            <div className="flex items-center justify-center gap-2 text-muted-foreground">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-              </span>
-              <p className="text-xs font-medium">
-                Работаю сегодня: {MASTER_DATA.workingHours}
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
     </header>
   );
 }

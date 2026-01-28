@@ -22,7 +22,7 @@ export const MASTER_DATA: ContactInfo = {
   phone: '+79146711299',
   phoneDisplay: '+7 (914) 671-12-99',
   whatsapp: 'https://wa.me/79146711299',
-  telegram: 'https://t.me/79146711299',
+  telegram: 'https://t.me/Repmasevg',
   workingHours: '08:00 – 24:00 (Ежедневно)',
   experience: '12 лет',
   areas: [
