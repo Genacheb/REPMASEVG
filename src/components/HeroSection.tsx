@@ -24,7 +24,7 @@ export function HeroSection() {
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-accent/5 rounded-full blur-3xl -z-10" />
 
       <div className="container mx-auto px-4">
-        <div className="lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Текстовый контент с анимацией появления */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
